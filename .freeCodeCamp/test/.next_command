@@ -1,0 +1,18 @@
+[ -d "$HOME/bin" ]
+[ -d "$HOME/.local/bin" ]
+PATH="$HOME/.local/bin:$PATH"
+[ -e /home/gitpod/.nix-profile/etc/profile.d/nix.sh ]
+. /home/gitpod/.nix-profile/etc/profile.d/nix.sh
+[[ -s "$HOME/.rvm/scripts/rvm" ]]
+source "$HOME/.rvm/scripts/rvm"
+[[ -n $SSH_CONNECTION ]]
+cd "/workspace/project"
+'/home/gitpod/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/node' -p '"27ef891f2403" + JSON.stringify(process.env) + "27ef891f2403"'
+echo $PWD >> /workspace/project/.freeCodeCamp/test/.cwd
+history -a
+echo hello
+echo $PWD >> /workspace/project/.freeCodeCamp/test/.cwd
+history -a
+echo hello PostgreSQL
+echo $PWD >> /workspace/project/.freeCodeCamp/test/.cwd
+history -a
